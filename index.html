@@ -20,7 +20,8 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'start': '#FF8938',
+                        'end': '#F00',
                     }
                 }
             }
@@ -139,7 +140,7 @@
         </section>
         <!-- super client section -->
         <section
-            class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
+            class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-start to-end px-16 py-24">
             <div class="flex lg:pr-32 items-center">
                 <div class="space-y-5 ">
                     <h2 class="text-5xl font-extrabold text-white">Meet Our Super <br> Clients</h2>
@@ -200,8 +201,15 @@
         </section>
 
     </main>
-    <footer>
-        <footer class="footer p-10 bg-base-200 text-base-content">
+    <footer class="px-48 py-10 bg-base-200 text-base-content">
+        <div class="flex justify-between my-24">
+            <img src="images/cup.png" alt="">
+            <p>
+                Ready to get strated?
+                <button class="btn btn-primary bg-gradient-to-r from-start to-end text-white border-none">Get Started</button>
+            </p>
+        </div>
+        <div class="footer ">
             <div>
                 <span class="footer-title">Services</span>
                 <a class="link link-hover">Branding</a>
@@ -229,14 +237,19 @@
                         <span class="label-text">Enter your email address</span>
                     </label>
                     <div class="relative">
-                        <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16" />
-                        <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
+                        <input type="text" placeholder="username@site.com" class="bg-transparent p-4 border-b-2 border-black outline-none" />
+                        <button class="btn btn-primary absolute top-0 right-0 rounded-full bg-gradient-to-r from-start to-end text-white border-none">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div >
+        <div class="mt-7 text-center">
+            <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+        </div>   
+        
     </footer>
-
 </body>
 
 </html>
